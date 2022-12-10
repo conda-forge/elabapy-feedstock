@@ -1,5 +1,5 @@
 {% set name = "elabapy" %}
-{% set version = "0.8.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b176943f8fc47488a918cd3255f9bf0355e5b3e541d33b29cb75abe4ede52d0
+  sha256: 2fc602539af7b7f5d30211fad7a629bfc61cf8e901efa139cf7608a09ab8e763
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENCE
-  summary: "elabftw API to manage experiments and items"
+  summary: elabftw API to manage experiments and items
   description: |
     This library provides easy access to eLabFTW's API.
   doc_url: https://doc.elabftw.net/api.html
