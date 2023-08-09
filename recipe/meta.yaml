@@ -1,5 +1,5 @@
 {% set name = "elabapy" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2fc602539af7b7f5d30211fad7a629bfc61cf8e901efa139cf7608a09ab8e763
+  sha256: 7bcb2f3822db6fb9c7b8a80b93c0cc82c139e82c8abe338e1474ded9b20bba8b
 
 build:
   noarch: python
